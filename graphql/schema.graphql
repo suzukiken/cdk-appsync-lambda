@@ -1,0 +1,14 @@
+type Output {
+  stack_id: String
+  name: String
+  value: String
+}
+type Resource {
+  stack_name: String
+  resource_type: String
+  physical_id: String
+}
+type Query {
+  listOutputs: [ Output ]
+  listResources: [ Resource ]
+}
